@@ -12,6 +12,7 @@ init:
 install:
   - "appveyor/setup_build_env.cmd"
   - "powershell appveyor/install.ps1"
+  - "powershell appveyor/pylist.ps1"
 
 build: false  # Not a C# project, build stuff at the test step instead.
 
@@ -22,7 +23,6 @@ after_test:
   - "%PYTHON%/python setup.py bdist_wheel"
   - ps: "ls dist"
   - ps: "ls C:/"
-  - ps: "ls C:/Py*"
 
 artifacts:
   - path: dist\*
