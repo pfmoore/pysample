@@ -1,7 +1,4 @@
 init:
   - ps: |
-      type 'C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\SetEnv.cmd'
-      echo '='*80
-      type 'C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd'
-      echo '='*80
+      dir C:\Python27_64
 build: off
