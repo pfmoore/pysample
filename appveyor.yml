@@ -1,4 +1,5 @@
 init:
   - ps: |
-      dir C:\Python27_64
+      dir C:\Py*
+      dir C:\*\python.exe
 build: off
