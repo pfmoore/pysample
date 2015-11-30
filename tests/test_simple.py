@@ -1,4 +1,4 @@
-import sample
+from _cffiex import lib
 
 def test_simple():
-    assert True
+    assert lib.GetVersion() != 0
