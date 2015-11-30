@@ -48,4 +48,4 @@ install:
     cmd: "%PYTHON%\\python.exe -m pip install tox"
 build: off
 test_script:
-        "%PYTHON%/Scripts/tox.exe" -e %TOXENV%
+    "%PYTHON%/Scripts/tox.exe -e %TOXENV%"
