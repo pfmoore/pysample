@@ -17,27 +17,35 @@ environment:
 
     - PYTHON: "C:\\Python33-x64"
       TOXENV: "py33"
+      INCLUDE: "C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\INCLUDE;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\INCLUDE;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\INCLUDE\\gl;"
+      LIB: "C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Lib\\amd64;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Lib\\X64;"
+      LIBPATH: "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework64\\v3.5;C:\\windows\\Microsoft.NET\\Framework\\v3.5;;c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Lib\\amd64;"
+      Path: "c:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework64\\v3.5;C:\\windows\\Microsoft.NET\\Framework\\v3.5;;C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\Tools;;c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Bin\\amd64;c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Bin\\VCPackages;;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\NETFX 4.0 Tools\\x64;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\x64;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin;;C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk\\bin;C:\\Program Files\\Google\\Compute Engine\\sysprep\\;C:\\Program Files\\Google\\Compute Engine\\metadata_scripts\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Tools\\GitVersion;C:\\Tools\\PsTools;C:\\Program Files\\7-Zip;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Mercurial;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.4\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\CLI\\wbin;C:\\Tools\\WebDriver;C:\\Tools\\NUnit\\bin;C:\\Tools\\xUnit;C:\\Tools\\MSpec;C:\\Tools\\Coverity\\bin;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\iojs;C:\\Program Files\\iojs;C:\\Users\\appveyor\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\CMake\\bin;C:\\go\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Python27;C:\\Ruby193\\bin;C:\\Program Files\\erl7.1\\bin;C:\\Users\\appveyor\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\MSBuild\\14.0\\Bin;C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow;C:\\Tools\\NuGet3;C:\\Program Files\\Amazon\\AWSCLI\\;C:\\Program Files\\Microsoft Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\Extensions\\Microsoft\\SQLDB\\DAC\\120;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\appveyor\\.dnx\\runtimes\\dnx-clr-win-x86.1.0.0-rc1-final\\bin;C:\\Users\\appveyor\\AppData\\Roaming\\npm;C:\\Program Files\\AppVeyor\\BuildAgent\\"
+      PlatformToolset: "Windows7.1SDK"
+      SDKDIR: "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\"
+      WindowsSDKDir: "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\"
+      WindowsSDKVersionOverride: "v7.1"
+      DISTUTILS_USE_SDK: "1"
+      MSSdk: "1"
 
     - PYTHON: "C:\\Python34-x64"
       TOXENV: "py34"
+      INCLUDE: "C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\INCLUDE;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\INCLUDE;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\INCLUDE\\gl;"
+      LIB: "C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Lib\\amd64;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Lib\\X64;"
+      LIBPATH: "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework64\\v3.5;C:\\windows\\Microsoft.NET\\Framework\\v3.5;;c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Lib\\amd64;"
+      Path: "c:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\windows\\Microsoft.NET\\Framework64\\v3.5;C:\\windows\\Microsoft.NET\\Framework\\v3.5;;C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\Tools;;c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Bin\\amd64;c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Bin\\VCPackages;;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\NETFX 4.0 Tools\\x64;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\x64;C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin;;C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk\\bin;C:\\Program Files\\Google\\Compute Engine\\sysprep\\;C:\\Program Files\\Google\\Compute Engine\\metadata_scripts\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Tools\\GitVersion;C:\\Tools\\PsTools;C:\\Program Files\\7-Zip;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Mercurial;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.4\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\CLI\\wbin;C:\\Tools\\WebDriver;C:\\Tools\\NUnit\\bin;C:\\Tools\\xUnit;C:\\Tools\\MSpec;C:\\Tools\\Coverity\\bin;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\iojs;C:\\Program Files\\iojs;C:\\Users\\appveyor\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\CMake\\bin;C:\\go\\bin;C:\\Program Files\\Java\\jdk1.8.0\\bin;C:\\Python27;C:\\Ruby193\\bin;C:\\Program Files\\erl7.1\\bin;C:\\Users\\appveyor\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\MSBuild\\14.0\\Bin;C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow;C:\\Tools\\NuGet3;C:\\Program Files\\Amazon\\AWSCLI\\;C:\\Program Files\\Microsoft Windows Performance Toolkit\\;C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\Extensions\\Microsoft\\SQLDB\\DAC\\120;C:\\Program Files (x86)\\nodejs\\;C:\\Users\\appveyor\\.dnx\\runtimes\\dnx-clr-win-x86.1.0.0-rc1-final\\bin;C:\\Users\\appveyor\\AppData\\Roaming\\npm;C:\\Program Files\\AppVeyor\\BuildAgent\\"
+      PlatformToolset: "Windows7.1SDK"
+      SDKDIR: "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\"
+      WindowsSDKDir: "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\"
+      WindowsSDKVersionOverride: "v7.1"
+      DISTUTILS_USE_SDK: "1"
+      MSSdk: "1"
 
     - PYTHON: "C:\\Python35-x64"
       TOXENV: "py35"
 
-init:
-    cmd: '"C:\\Program Files\\Microsoft SDKs\Windows\\v7.1\\Bin\\SetEnv.cmd" /x64 /release & set'
 install:
     cmd: "%PYTHON%\\python.exe -m pip install tox"
 build: off
 test_script:
-    - ps: |
-        if (($env:PYTHON -like '*-x64') -and ($env:TOXENV -in 'py33', 'py34')) {
-        @"
-            SET DISTUTILS_USE_SDK=1
-            SET MSSdk=1
-            "C:\\Program Files\\Microsoft SDKs\Windows\\v7.1\\Bin\\SetEnv.cmd" /x64 /release
-            "%PYTHON%/Scripts/tox.exe" -e %TOXENV%
-        "@ | cmd
-        } else {
-            & "$env:PYTHON/Scripts/tox.exe" -e $env:TOXENV
-        }
+        "%PYTHON%/Scripts/tox.exe" -e %TOXENV%
