@@ -53,7 +53,7 @@ setup(
     keywords='sample setuptools development',
 
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
-#    ext_modules = [
-#        Extension('sample', sources = ['sample.c']),
-#    ],
+    ext_modules = [
+        Extension('sample', sources = ['sample.c']),
+    ],
 )
