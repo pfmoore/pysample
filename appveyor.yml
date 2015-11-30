@@ -30,12 +30,12 @@ build: off
 test_script:
     - ps: |
         if (($env:PYTHON -like '*-x64') -and ($env:TOXENV -in 'py33', 'py34')) {
-            @"
+        @"
             SET DISTUTILS_USE_SDK=1
             SET MSSdk=1
             "C:\\Program Files\\Microsoft SDKs\Windows\\v7.1\\Bin\\SetEnv.cmd" /x64 /release
             "%PYTHON%/Scripts/tox.exe" -e %TOXENV%
-            "@ | cmd
+        "@ | cmd
         } else {
             & "$env:PYTHON/Scripts/tox.exe" -e $env:TOXENV
         }
