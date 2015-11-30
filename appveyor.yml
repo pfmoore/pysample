@@ -24,6 +24,8 @@ environment:
     - PYTHON: "C:\\Python35-x64"
       TOXENV: "py35"
 
+install:
+    cmd: "%PYTHON%\\python.exe -m pip install tox"
 build: off
 test_script:
     "%PYTHON%/Scripts/tox.exe -e %TOXENV% -- -m unit -n 8"
