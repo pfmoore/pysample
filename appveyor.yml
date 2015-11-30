@@ -24,6 +24,8 @@ environment:
     - PYTHON: "C:\\Python35-x64"
       TOXENV: "py35"
 
+init:
+    cmd: '"C:\\Program Files\\Microsoft SDKs\Windows\\v7.1\\Bin\\SetEnv.cmd" /x64 /release & set'
 install:
     cmd: "%PYTHON%\\python.exe -m pip install tox"
 build: off
