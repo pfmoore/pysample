@@ -26,4 +26,4 @@ environment:
 
 build: off
 test_script:
-    %PYTHON%/Scripts/tox.exe -e %TOXENV% -- -m unit -n 8"
+    "%PYTHON%/Scripts/tox.exe -e %TOXENV% -- -m unit -n 8"
