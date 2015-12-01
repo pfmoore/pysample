@@ -8,8 +8,8 @@
 
 IF "%DISTUTILS_USE_SDK%"=="1" (
     ECHO Configuring environment to build with MSVC on a 64bit architecture
-    ECHO Using Windows SDK 7.1A
-    "C:\Program Files\Microsoft SDKs\Windows\7.1A\Bin\SetEnv.cmd" /x64 /release
+    ECHO Using Windows SDK 7.1
+    "C:\Program Files\Microsoft SDKs\Windows\7.1\Bin\SetEnv.cmd" /x64 /release
     SET MSSdk=1
 ) ELSE (
     ECHO Using default MSVC build environment
