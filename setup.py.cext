@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, Extension, find_packages
 from codecs import open
 from os import path
 
@@ -53,7 +53,7 @@ setup(
     keywords='sample setuptools development',
 
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
-    setup_requires=["cffi>=1.0.0"],
-    cffi_modules=["cffiex_build.py:ffi"],
-    install_requires=["cffi>=1.0.0"],
+    ext_modules = [
+        Extension('sample', sources = ['sample.c']),
+    ],
 )
